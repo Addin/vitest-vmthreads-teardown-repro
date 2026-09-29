@@ -1,0 +1,17 @@
+{
+  "name": "vitest-vmthreads-teardown-repro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal reproduction for vitest-dev/vitest#11371 - vmThreads: teardown timeout only logs and a stuck worker is never force-terminated, so the process can hang.",
+  "scripts": {
+    "repro": "node scripts/repro.mjs vitest4",
+    "repro:5": "node scripts/repro.mjs vitest5",
+    "repro:both": "npm run repro && npm run repro:5"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7",
+    "vitest4": "npm:vitest@4.1.11",
+    "vitest5": "npm:vitest@5.0.2"
+  }
+}
