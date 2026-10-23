@@ -10,7 +10,7 @@
     "repro:both": "npm run repro && npm run repro:5"
   },
   "devDependencies": {
-    "vite": "^7.1.7",
+    "vite": "^7.3.7",
     "vitest4": "npm:vitest@4.1.11",
     "vitest5": "npm:vitest@5.0.2"
   }
